@@ -73,9 +73,7 @@ class _TasksState extends State<Tasks> {
                             width: 200,
                             child: Text(
                               widget.nome,
-                              style: const TextStyle(
-                                  fontSize: 24,
-                                  overflow: TextOverflow.ellipsis),
+                              style: Theme.of(context).textTheme.displaySmall,
                             ),
                           ),
                           Difficulty(widget.dificuldade),
@@ -92,11 +90,11 @@ class _TasksState extends State<Tasks> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               crossAxisAlignment: CrossAxisAlignment.end,
-                              children: const [
+                              children: [
                                 Icon(Icons.arrow_drop_up),
                                 Text(
                                   'UP',
-                                  style: TextStyle(fontSize: 12),
+                                  style: Theme.of(context).primaryTextTheme.labelMedium,
                                 ),
                               ],
                             ),
@@ -127,7 +125,7 @@ class _TasksState extends State<Tasks> {
                       padding: const EdgeInsets.all(12.0),
                       child: Text(
                         'Nivel: $level',
-                        style: TextStyle(color: Theme.of(context).colorScheme.onPrimaryContainer, fontSize: 16),
+                        style: Theme.of(context).primaryTextTheme.labelLarge,
                       ),
                     ),
                   ],

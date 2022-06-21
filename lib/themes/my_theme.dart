@@ -8,4 +8,16 @@ ThemeData myTheme = ThemeData(
     secondary: Colors.pink[200],
     surface: Colors.pink[100],
   ),
+  textTheme: TextTheme(
+    displaySmall: TextStyle(
+      color: Colors.black,
+      fontSize: 24,
+      overflow: TextOverflow.ellipsis,
+    ),
+  ),
+  primaryTextTheme: TextTheme(
+    labelLarge: TextStyle(
+      fontSize: 16,
+    ),
+  ),
 );
